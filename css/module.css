@@ -1,0 +1,29 @@
+header {
+    background: linear-gradient(rgb(116, 174, 240), white);
+    text-align: center;
+}
+
+h1 {
+    padding-top: 10vh;
+}
+
+select {
+    margin-top: 10vh;
+    width: 20%;
+    height: 6vh;
+    font-size: 1.2rem;
+}
+
+div p {
+    line-height: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding-top: 10vh;
+    background: darkgray;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 10vh;
+
+}
