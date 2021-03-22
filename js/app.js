@@ -8,11 +8,10 @@ function dataObj(image_url, title, description, keyword, horns) {
     this.horns = horns;
 }
 dataObj.prototype.render = function () {
-    let renderTemplate = $('#photo-template').clone();
+    let renderTemplate = $('<div><h2></h2> <img><p></p></div>');
     renderTemplate.find('h2').text(this.title);
     renderTemplate.find('img').attr('src', this.image_url).attr('alt', this.description);
-    renderTemplate.find('p').html(`${this.description} <br />${this.keyword} <br />${this.horns}`);
-    renderTemplate.removeAttr('id')
+    renderTemplate.find('p').html(`${this.description} <br /><br />Type:${this.keyword} <br />Horns:${this.horns}`);
     $('main').append(renderTemplate);
 }
 
@@ -51,6 +50,7 @@ function addOptions(elem) {
 $(function () {
     gitObjData(addOptions);
     $('select').on('change', function () {
+        $('main').html('');
         console.log('change');
         gitObjData(createAndRender);
     })
