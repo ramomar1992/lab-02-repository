@@ -1,0 +1,35 @@
+body {
+    min-height: 100vh;
+}
+
+header {
+    min-height: 20vh;
+}
+
+main {
+    width: 80%;
+
+    height: fit-content;
+    margin: 0 auto;
+}
+
+main:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+div {
+    width: 30%;
+    height: 50vh;
+    min-height: fit-content;
+    float: left;
+    margin: 3rem 1.5%;
+}
+
+footer {
+    margin-top: 10rem;
+    clear: both;
+}
