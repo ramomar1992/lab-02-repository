@@ -8,14 +8,26 @@ h1 {
 }
 
 select {
-    margin-top: 10vh;
+    margin-top: 5vh;
     width: 20%;
     height: 6vh;
     font-size: 1.2rem;
 }
 
+div h2 {
+    height: 20%;
+    margin-bottom: 1rem;
+}
+
+div img {
+    height: 50vh;
+    width: 100%;
+}
+
 div p {
-    line-height: 1.5rem;
+    height: 20%;
+    line-height: 1.6rem;
+    font-weight: bolder;
 }
 
 footer {
@@ -26,4 +38,32 @@ footer {
     font-weight: bold;
     height: 10vh;
 
+}
+
+nav {
+    margin: 1rem;
+    background: rgba(255, 248, 220, 0.479);
+}
+
+nav button {
+    background: darkgray;
+    margin: 1rem;
+    width: 15%;
+    height: 4vh;
+    border: none;
+    border-radius: 20px;
+    transition: 500ms ease;
+    outline: none;
+}
+
+nav button:hover {
+    background: chocolate;
+}
+
+div {
+    /* border: 1px solid black; */
+    background: rgba(255, 235, 205, 0.555);
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.527);
 }

@@ -7,26 +7,21 @@ header {
 }
 
 main {
-    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 3rem auto;
+    width: 90%;
 
-    height: fit-content;
-    margin: 0 auto;
 }
 
-main:after {
-    content: ".";
-    visibility: hidden;
-    display: block;
-    height: 0;
-    clear: both;
-}
+
 
 div {
-    width: 30%;
-    height: 50vh;
-    min-height: fit-content;
-    float: left;
-    margin: 3rem 1.5%;
+    /* width: fit-content; */
+    margin-top: 5vh;
+    width: 28%;
+    height: fit-content;
 }
 
 footer {

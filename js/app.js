@@ -56,7 +56,8 @@ $(function () {
         $('main').html('');
         gitObjData(createAndRender, page);
     })
-    $('button').on('click', function () {
+    $('button').on('click', function (event) {
+        event.preventDefault();
         if ($(this).text() == 'Page 1') {
             page = './data/page-1.json';
         } else if ($(this).text() == 'Page 2') {
