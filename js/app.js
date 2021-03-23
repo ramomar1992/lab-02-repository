@@ -51,7 +51,6 @@ $(function () {
     gitObjData(addOptions);
     $('select').on('change', function () {
         $('main').html('');
-        console.log('change');
         gitObjData(createAndRender);
     })
 });
