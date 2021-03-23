@@ -16,9 +16,22 @@
             <button>Page 1</button>
             <button>Page 2</button>
         </nav>
-        <select>
-            <option value="default">Filter by Keyword</option>
-        </select>
+        <section>
+            <label for="type">Type:
+
+                <select id="type">
+                    <option value="default">Filter by Keyword</option>
+                </select>
+            </label>
+            <label for="sort">Sort by:
+                <select name="sort" id="sort">
+                    <option value="" selected disabled hidden>Choose here</option>
+                    <option value="a-z">A - Z</option>
+                    <option value="z-a">Z - A</option>
+                    <option value="horns">Horns</option>
+                </select>
+            </label>
+        </section>
 
     </header>
     <template id="template" type="x-tmpl-mustache">
